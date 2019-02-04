@@ -1,6 +1,14 @@
+## command-role-playing-game:
+
+In this Command Role Palying game there are two Player one is computer generated and other is you secleted from menu and Each player has coins and on every action coins are decducted on the bases of your selected action.
+
 ## Building from Source:
   To build jar run command "mvn clean install" 
   To Run Jar file command "java –jar jar-name"
 
-## COVERAGE:
+## Coverage:
  To check coverage run command “mvn package cobertura:cobertura”
+ 
+## Libraries and Frameworks used:
+ org.powermock for test cases
+ cobertura for test coverage report

@@ -1,4 +1,4 @@
-## command-role-playing-game:
+## Console Based Fighting Game:
 
 In this Command Role Palying game there are two Player one is computer generated and other is you secleted from menu and Each player has coins and on every action coins are decducted on the bases of your selected action.
 

@@ -1,0 +1,5 @@
+Building from Source:
+	To build jar run command “mvn clean install” 
+	To Run Jar file command “java –jar jar-name”
+COVERAGE:
+	To check coverage run command “mvn package cobertura:cobertura”

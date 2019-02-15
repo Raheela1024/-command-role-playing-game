@@ -36,7 +36,7 @@ public class CharacterServiceTest {
 
     @Test
     public void testChooseCharacter() {
-        String inputData = "2\n Test Character";
+        String inputData = "2\n 2\n Test Character";
         System.setIn(new java.io.ByteArrayInputStream(inputData.getBytes()));
 
         Character character = characterService.chooseCharacter();

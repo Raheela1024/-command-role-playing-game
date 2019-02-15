@@ -13,7 +13,6 @@ public class Player implements Serializable {
 
     private int coins = 100;
     private Character character;
-    private PerformAction[] performAction;
 
     public Player() {
     }
@@ -38,14 +37,6 @@ public class Player implements Serializable {
         this.character = character;
     }
 
-    public PerformAction[] getPerformAction() {
-        return performAction;
-    }
-
-    public void setPerformAction(PerformAction[] performAction) {
-        this.performAction = performAction;
-    }
-
     public void performAction(Player player, int actionId, Action opponentAction) {
         PerformAction performAction = (PerformAction) character.getActions().stream()
                 .filter(action -> action.getId() == actionId)
@@ -61,6 +52,6 @@ public class Player implements Serializable {
     @Override
     public String toString() {
         return new StringBuffer(" coins ").append(this.getCoins())
-                .append(" Character: ").append(this.getCharacter()).append(" Action Performed : ").append(this.getPerformAction()).toString();
+                .append(" Character: ").append(this.getCharacter()).append(" Action Performed : ").toString();
     }
 }

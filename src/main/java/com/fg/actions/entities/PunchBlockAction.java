@@ -16,14 +16,6 @@ public class PunchBlockAction extends Action implements PerformAction {
         super(id, name);
     }
 
-    public static int getCoinsDeducted() {
-        return coinsDeducted;
-    }
-
-    public static void setCoinsDeducted(int coinsDeducted) {
-        PunchBlockAction.coinsDeducted = coinsDeducted;
-    }
-
     @Override
     public void execute(Player player, Action opponentAction) {
         deductCoins(player, coinsDeducted, opponentAction.getName());
